@@ -1,4 +1,4 @@
-import Token from '../../core/token';//'@dubook-core/token';
+import Token from '../../core/token';
 
 export const verifyToken = async (req, res, next) => {
   const userToken = req.get('x-token');

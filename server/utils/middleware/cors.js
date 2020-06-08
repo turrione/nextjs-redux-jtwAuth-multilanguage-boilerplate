@@ -1,5 +1,5 @@
 import cors from 'cors';
-import { CORS } from '../../config'; //'@dubook-config';
+import { CORS } from '../../config';
 
 ///imp
 const allowedOrigins = CORS.split(",").map((origin) => origin.trim());

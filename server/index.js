@@ -5,10 +5,10 @@ import { parse } from 'url';
 import Server from './core/server';
 import userRoutes from './controllers/user.controller';
 
-import corsMiddleware from './utils/middleware/cors';//'@dubook-utils/middleware/cors';
-import cacheMiddleware from './utils/middleware/cache';//'@dubook-utils/middleware/cache';
+import corsMiddleware from './utils/middleware/cors';
+import cacheMiddleware from './utils/middleware/cache';
 
-import { notFoundMiddleware, errorMiddleware } from './core/error';//'@dubook-core/error';
+import { notFoundMiddleware, errorMiddleware } from './core/error';
 
 const server = new Server;
 const dev = process.env.NODE_ENV !== 'production';
