@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import { connect } from 'react-redux';
 import actions from '../../redux/actions';
@@ -22,11 +22,13 @@ import withLocale from '../../hocs/withLocale';
 import LocaleLink from '../../components/shared/Link';
 import Layout from '../../components/layout/Layout';
 import useTranslation from '../../hook/useTranslation';
+import { useRouter } from 'next/router';
 
 
-const Signup = ({ authenticate }) => {
+const Signup = (props) => {
 
   let { t, locale } = useTranslation();
+  let router = useRouter();
 
   let [state, setState] = useState({
     email: '',
@@ -34,10 +36,14 @@ const Signup = ({ authenticate }) => {
     repeatPass: ''
   });
 
+  useEffect(() => {
+    if (props.authentication.token) router.push('/[lang]/profile', `/${locale}/profile`);
+  }, [props.authentication.token]);
+
   let handleSubmit = (e) => {
     e.preventDefault();
     if (state.password === state.repeatPass) {
-      authenticate(
+      props.authenticate(
         { email: state.email, password: state.password },
         '/' + locale, 'signup'
       );
