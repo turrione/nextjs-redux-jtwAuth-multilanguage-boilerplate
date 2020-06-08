@@ -1,0 +1,35 @@
+{
+  "name": "monolitic-nextjs-express-redux-translations-mdbootstrap-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "postinstall": "npm rebuild",
+    "dev": "node start.js",
+    "build": "./node_modules/.bin/next build",
+    "start": "NODE_ENV=production node start.js"
+  },
+  "author": "Marc Torrents",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "http-status": "^1.4.2",
+    "js-cookie": "^2.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "mdbreact": "^4.27.0",
+    "next": "^9.4.4",
+    "next-redux-wrapper": "^6.0.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-devtools-extension": "^2.13.8",
+    "redux-thunk": "^2.3.0",
+    "sweetalert2": "^9.14.2"
+  }
+}
