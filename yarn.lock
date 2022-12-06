@@ -2496,9 +2496,9 @@ debug@^4.1.0:
     ms "^2.1.1"
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
-  integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
+  integrity sha512-FqUYQ+8o158GyGTrMFJms9qh3CqTKvAqgqsTnkLI8sKu0028orqBhxNMFkFen0zGyg6epACD32pjVk58ngIErQ==
 
 deep-equal@^1.1.1:
   version "1.1.1"
@@ -6312,6 +6312,11 @@ svgo@^1.0.0:
     stable "^0.1.8"
     unquote "~1.1.1"
     util.promisify "~1.0.0"
+
+sweetalert2@^9.14.2:
+  version "9.17.4"
+  resolved "https://registry.yarnpkg.com/sweetalert2/-/sweetalert2-9.17.4.tgz#ab8ed721e0d1c22aef627c2116787fe99a60f679"
+  integrity sha512-T6Js/kjtGmpekE1tPT+drdgsedEnaet03mMadKUMvtBlFzVLcYy8kvIuchaQJ09rhG5bdmRRMQ2sEK0ZnHi1vg==
 
 symbol-observable@1.2.0, symbol-observable@^1.0.4, symbol-observable@^1.1.0, symbol-observable@^1.2.0:
   version "1.2.0"
